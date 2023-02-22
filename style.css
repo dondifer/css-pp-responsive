@@ -1,0 +1,76 @@
+body,
+header,
+footer {
+  width: 100%;
+}
+
+h1,
+h2,
+p,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    display: none;
+  }
+}
+
+header {
+  background-color: aqua;
+  color: white;
+}
+
+.hero {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+.container__content {
+  background-color: rgb(122, 251, 36);
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    flex-direction: row;
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.container__sidebar {
+  background-color: rgb(215, 57, 247);
+  color: white;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+}
